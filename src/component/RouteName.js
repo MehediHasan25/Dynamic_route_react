@@ -12,7 +12,7 @@ export const RouteName = [
     {
         "id": 1,
         "featureName" : "Home",
-        "path": "/",
+        "path": "/home",
         "exact": true,
         "component": <Home/>
     },
@@ -67,7 +67,7 @@ export const RouteName = [
 
 ];
 
-const featureArray = ["Designation", "HomePc","Home"];
+const featureArray = ["Home","Offices", "Ekyc","OfficePc"];
 
 
  export const routes = [];
