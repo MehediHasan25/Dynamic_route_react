@@ -7,7 +7,7 @@ import {
     useParams,
     useRouteMatch
 } from "react-router-dom";
-//import { routes } from '../RouteName';
+import { routes } from '../RouteName';
 import Sidebar from './Sidebar';
 import Nav from './Nav';
 import Content from './Content';
@@ -16,10 +16,12 @@ export class RoutingSide extends Component {
         return (
             <Router>
                 <div >
-                    <Nav/>
+                    <Nav />
                     <div className="d-flex" style={{ margin: "0", padding: "0", overflowX: "hidden" }}>
-                    <Sidebar/>          
-                    <Content/>
+                        <Sidebar />
+                        <Content />
+
+
                     </div>
                 </div>
             </Router>

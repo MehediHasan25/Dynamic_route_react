@@ -6,71 +6,109 @@ import Offices from './Offices';
 import OfficePc from './OfficePc';
 import Designation from './Designation';
 import Ekyc from './Ekyc';
+import Dashboard from './Sidebar/Dashboard';
+import Login from './Login/login';
+
+
+// export const login = [
+//     {
+//         "path": "/",
+//         "component": <Login />
+//     }
+// ]
+
+// export const homeRoute = [
+
+//     {
+//         "path": "/dashboard",
+//         "component": <Dashboard />
+//     }
+// ]
+
 
 
 export const RouteName = [
     {
         "id": 1,
-        "featureName" : "Home",
+        "featureName": "Home",
+        // "nested": [{
+        //     "id": 120,
+        //     "featureName": "HomePc",
+        //     "path": "/homepc",
+        //     "exact": true,
+        //     "component": <HomePc />
+        // }, {
+        //     "id": 121,
+        //     "featureName": "HomePc",
+        //     "path": "/homepc",
+        //     "exact": true,
+        //     "component": <HomePc />
+        // }, {
+        //     "id": 122,
+        //     "featureName": "HomePc",
+        //     "path": "/homepc",
+        //     "exact": true,
+        //     "component": <HomePc />
+        // }],
         "path": "/home",
         "exact": true,
-        "component": <Home/>
+        "component": <Home />
     },
 
     {
         "id": 2,
-        "featureName" : "HomePc",
+        "featureName": "HomePc",
         "path": "/homepc",
         "exact": true,
-        "component": <HomePc/>
+        "component": <HomePc />
     },
 
     {
         "id": 3,
-        "featureName" : "HomeName",
+        "featureName": "HomeName",
         "path": "/homename",
         "exact": true,
-        "component": <HomeName/>
+        "component": <HomeName />
     },
 
     {
         "id": 4,
-        "featureName" : "Offices",
+        "featureName": "Offices",
         "path": "/office",
         "exact": true,
-        "component": <Offices/>
+        "component": <Offices />
     },
 
     {
         "id": 5,
-        "featureName" : "OfficePc",
+        "featureName": "OfficePc",
         "path": "/officepc",
         "exact": true,
-        "component": <OfficePc/>
+        "component": <OfficePc />
     },
 
     {
         "id": 6,
-        "featureName" : "Designation",
+        "featureName": "Designation",
         "path": "/designation",
         "exact": true,
-        "component": <Designation/>
+        "component": <Designation />
     },
 
     {
         "id": 7,
-        "featureName" : "Ekyc",
+        "featureName": "Ekyc",
         "path": "/Ekyc",
         "exact": true,
-        "component": <Ekyc/>
+        "component": <Ekyc />
     }
 
 ];
 
-const featureArray = ["Home","Offices", "Ekyc","OfficePc"];
+const featureArray = ["Home", "Offices", "Ekyc", "OfficePc"];
 
 
- export const routes = [];
+export const routes = [];
 
 
 // for(let j = 0; j< featureArray.length; j++){
@@ -81,10 +119,10 @@ const featureArray = ["Home","Offices", "Ekyc","OfficePc"];
 // }
 // }
 
-featureArray.map((val1, i) =>{
-    return RouteName.map((val2, index)=>{
-        if(RouteName[index].featureName === featureArray[i]){
-           return routes.push(RouteName[index]);
+featureArray.map((val1, i) => {
+    return RouteName.map((val2, index) => {
+        if (RouteName[index].featureName === featureArray[i]) {
+            return routes.push(RouteName[index]);
         }
     })
 })
