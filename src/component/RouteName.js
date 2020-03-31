@@ -33,6 +33,21 @@ export const RouteName = [
         "id": 1,
         "featureName": "Home",
         "path": "/home",
+        "nested": [{
+            "featureName": "Create",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Designation />
+        }, {
+            "featureName": "Update",
+            "path": "/homepc",
+            "exact": true, "component": <Ekyc />
+        }, {
+            "featureName": "Delete",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }],
         "exact": true,
         "component": <Home />
     },
@@ -41,6 +56,22 @@ export const RouteName = [
         "id": 2,
         "featureName": "HomePc",
         "path": "/homepc",
+        "nested": [{
+            "featureName": "Delete",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }, {
+            "featureName": "Update",
+            "path": "/homepc",
+            "exact": true,
+            "component": <HomePc />
+        }, {
+            "featureName": "Create",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Designation />
+        }],
         "exact": true,
         "component": <HomePc />
     },
@@ -49,6 +80,22 @@ export const RouteName = [
         "id": 3,
         "featureName": "HomeName",
         "path": "/homename",
+        "nested": [{
+            "featureName": "Update",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }, {
+            "featureName": "Create",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Home />
+        }, {
+            "featureName": "Delete",
+            "path": "/homepc",
+            "exact": true,
+            "component": <HomeName />
+        }],
         "exact": true,
         "component": <HomeName />
     },
@@ -57,6 +104,22 @@ export const RouteName = [
         "id": 4,
         "featureName": "Offices",
         "path": "/office",
+        "nested": [{
+            "featureName": "No Update",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }, {
+            "featureName": "No Create",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Offices />
+        }, {
+            "featureName": "No Delete",
+            "path": "/homepc",
+            "exact": true,
+            "component": <OfficePc />
+        }],
         "exact": true,
         "component": <Offices />
     },
@@ -65,6 +128,22 @@ export const RouteName = [
         "id": 5,
         "featureName": "OfficePc",
         "path": "/officepc",
+        "nested": [{
+            "featureName": "Will Mount",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }, {
+            "featureName": "Did Mount",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Ekyc />
+        }, {
+            "featureName": "Did Update",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Designation />
+        }],
         "exact": true,
         "component": <OfficePc />
     },
@@ -73,6 +152,22 @@ export const RouteName = [
         "id": 6,
         "featureName": "Designation",
         "path": "/designation",
+        "nested": [{
+            "featureName": "Did UnMount",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Designation />
+        }, {
+            "featureName": "Will UnMount",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Ekyc />
+        }, {
+            "featureName": "Update",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }],
         "exact": true,
         "component": <Designation />
     },
@@ -81,6 +176,22 @@ export const RouteName = [
         "id": 7,
         "featureName": "Ekyc",
         "path": "/Ekyc",
+        "nested": [{
+            "featureName": "Access Denied",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Designation />
+        }, {
+            "featureName": "WelCome",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Ekyc />
+        }, {
+            "featureName": "Hello World",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }],
         "exact": true,
         "component": <Ekyc />
     },
@@ -88,6 +199,22 @@ export const RouteName = [
         "id": 8,
         "featureName": "DropDown",
         "path": "/DropDown",
+        "nested": [{
+            "featureName": "There",
+            "path": "/homepc",
+            "exact": true,
+            "component": <DropDown />
+        }, {
+            "featureName": "Where",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Ekyc />
+        }, {
+            "featureName": "Other",
+            "path": "/homepc",
+            "exact": true,
+            "component": <Designation />
+        }],
         "exact": true,
         "component": <DropDown />
     }
