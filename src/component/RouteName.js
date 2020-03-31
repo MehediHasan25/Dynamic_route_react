@@ -8,6 +8,7 @@ import Designation from './Designation';
 import Ekyc from './Ekyc';
 import Dashboard from './Sidebar/Dashboard';
 import Login from './Login/login';
+import DropDown from './DropDown/DropDown'
 
 
 // export const login = [
@@ -31,25 +32,6 @@ export const RouteName = [
     {
         "id": 1,
         "featureName": "Home",
-        // "nested": [{
-        //     "id": 120,
-        //     "featureName": "HomePc",
-        //     "path": "/homepc",
-        //     "exact": true,
-        //     "component": <HomePc />
-        // }, {
-        //     "id": 121,
-        //     "featureName": "HomePc",
-        //     "path": "/homepc",
-        //     "exact": true,
-        //     "component": <HomePc />
-        // }, {
-        //     "id": 122,
-        //     "featureName": "HomePc",
-        //     "path": "/homepc",
-        //     "exact": true,
-        //     "component": <HomePc />
-        // }],
         "path": "/home",
         "exact": true,
         "component": <Home />
@@ -101,11 +83,19 @@ export const RouteName = [
         "path": "/Ekyc",
         "exact": true,
         "component": <Ekyc />
+    },
+    {
+        "id": 8,
+        "featureName": "DropDown",
+        "path": "/DropDown",
+        "exact": true,
+        "component": <DropDown />
     }
+
 
 ];
 
-const featureArray = ["Home", "Offices", "Ekyc", "OfficePc"];
+const featureArray = ["Home", "Offices", "Ekyc", "OfficePc", "DropDown"];
 
 
 export const routes = [];
